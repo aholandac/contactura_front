@@ -4,15 +4,17 @@
     margin: 180px 0px;
 }
 
-.example-card{
-    max-width: 400px;
+body{
+    background: linear-gradient(rgb(59, 59, 236), rgb(131, 129, 129), rgb(49, 49, 49));
 }
 
-.example-card mat-card-title{
-    text-align: center;
+.example-card{
+    max-width: 400px;    
 }
 
 .example-form{
+    display: flex;
+    flex-direction: column;
     min-width: 150px;
     max-width: 500px;
     width: 100%;
@@ -25,4 +27,13 @@
 .alignButtonsCenter{
     display: flex;
     justify-content: center;
+}
+
+.container-logo{
+    display: flex;
+    justify-content: center;
+
+    img{
+        width: 200px;
+    }
 }

@@ -10,6 +10,7 @@ import { ListaUsuariosComponent } from './lista-usuarios/lista-usuarios.componen
 import { FormUsuariosComponent } from './form-usuarios/form-usuarios.component';
 import { FormContatosComponent } from './form-contatos/form-contatos.component';
 import { NotFoudComponent } from './sharerComponents/not-foud/not-foud.component';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 
 // imports do material design
 import { MatCardModule } from '@angular/material/card';
@@ -33,7 +34,9 @@ import { MatInputModule } from '@angular/material/input';
     BrowserAnimationsModule,
     MatCardModule,
     MatButtonModule,
-    MatInputModule
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -17,7 +17,6 @@ export class AuthGuard implements CanActivate {
       this.router.navigate(['/login']);
     }
   }
-  
 }
 
 @Injectable({
@@ -29,7 +28,7 @@ export class AuthAdminGuard implements CanActivate {
   canActivate(
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean> | boolean {
-      if(localStorage.getItem('token') != null){
+      if(localStorage.getItem('token') != null && localStorage.getItem('admin') == 'true'){
         return true;
       }else{
         this.router.navigate(['/login']);
